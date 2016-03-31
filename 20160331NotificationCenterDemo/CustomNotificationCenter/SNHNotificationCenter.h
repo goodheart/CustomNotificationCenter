@@ -8,6 +8,7 @@
 
 Copyright © 2016年 majian. All rights reserved.
 
+ github address : https://github.com/goodheart/CustomNotificationCenter
 */
 
 #import <Foundation/Foundation.h>
