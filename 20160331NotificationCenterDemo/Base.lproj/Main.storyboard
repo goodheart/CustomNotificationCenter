@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="17t-fb-oia">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T92-lK-Asc">
+                                <rect key="frame" x="214" y="162" width="171" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="KOM-A3-n0d"/>
+                                    <constraint firstAttribute="height" constant="51" id="V2p-nK-vGc"/>
+                                </constraints>
+                                <state key="normal" title="发送通知  登录成功"/>
+                                <connections>
+                                    <action selector="sendNotifiWithUserInfoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xVm-dp-ktI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvU-vl-cZh">
+                                <rect key="frame" x="214" y="248" width="171" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="08p-pv-8Am"/>
+                                    <constraint firstAttribute="width" constant="171" id="mg0-aR-0gE"/>
+                                </constraints>
+                                <state key="normal" title="发送通知 账号异处登录"/>
+                                <connections>
+                                    <action selector="sendNotiAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uX3-dD-Lq2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPo-Gy-wrj">
+                                <rect key="frame" x="241" y="326" width="118" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="Erh-lL-SS2"/>
+                                    <constraint firstAttribute="height" constant="30" id="W4O-Dq-jUy"/>
+                                </constraints>
+                                <state key="normal" title="退出登录成功"/>
+                                <connections>
+                                    <action selector="loginoutAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PVN-DF-8Yg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cvU-vl-cZh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2WB-c3-qCg"/>
+                            <constraint firstItem="PPo-Gy-wrj" firstAttribute="top" secondItem="cvU-vl-cZh" secondAttribute="bottom" constant="27" id="gaz-j6-S47"/>
+                            <constraint firstItem="T92-lK-Asc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l9L-bF-Kwo"/>
+                            <constraint firstItem="cvU-vl-cZh" firstAttribute="top" secondItem="T92-lK-Asc" secondAttribute="bottom" constant="35" id="mmR-6F-M9A"/>
+                            <constraint firstItem="T92-lK-Asc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="142" id="nva-7d-hon"/>
+                            <constraint firstItem="PPo-Gy-wrj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vjR-Cx-YYF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jcD-GG-aQI"/>
+                    <connections>
+                        <outlet property="sendNotificationButton" destination="cvU-vl-cZh" id="wFW-p4-Jjz"/>
+                        <outlet property="sendNotificationWithUserInfoButton" destination="T92-lK-Asc" id="DM1-ij-py0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1247" y="348"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4ck-87-fyv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="17t-fb-oia" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VxW-Fy-fzY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="u9T-yg-PJ1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZGQ-7S-xrg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="435" y="348"/>
+        </scene>
+    </scenes>
+</document>
