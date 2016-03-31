@@ -46,7 +46,7 @@ extern const struct kSNHNotificationTypeKeys kSNHNotificationTypeKey;
 
 @class SNHNotificationCenter
 
-@abstract 自定义通知中心 1、严格限制通知类型 2、统一通知调用方法 3、对observer弱引用，简化接收通知流程，防止人为引发的异常。
+@abstract 自定义通知中心 1、隔离系统通知中心，限制通知类型，防止项目中自定义通知乱飞 2、统一通知调用方法 3、对observer弱引用，简化接收通知流程，防止人为引发的异常。
 
 */
 @interface SNHNotificationCenter : NSObject
